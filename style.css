@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*///////////////////navbar////////////////////////*/
+.hero-section {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+  background-image: linear-gradient(90deg, transparent, rgba(73, 73, 73, 0.64)),
+    url(imgs/pexels-ozgomz-849835.jpg);
+  background-size: cover;
+  background-position: 20px, 0;
+  position: relative;
+  justify-content: space-between;
+}
+.hero-section nav {
+  height: 100%;
+  padding: 10px 5px;
+  background-image: linear-gradient(90deg, #3f3e3e, transparent);
+  max-width: clamp(6vw, 6vw, 10vw);
+}
+.links {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.links img {
+  max-width: 100%;
+}
+.links img:hover {
+  scale: 1.2;
+  rotate: 360deg;
+  transition: 1.3s;
+}
+.hero-content {
+  width: 50vw;
+  padding-top: 14vh;
+  max-height: 50vh;
+  padding-right: 3vw;
+  height: 50vh;
+}
+.logo {
+  width: 30vw;
+  position: absolute;
+  top: 14%;
+  left: 16%;
+  font-family: snap itc;
+  font-size: 3rem;
+  color: gold;
+  text-shadow: 3px 2px 3px #bebeb6;
+}
+.hero-content p {
+  font-size: 2rem;
+  color: goldenrod;
+  font-family: vladimir script;
+}
+.hero-content .title {
+  font-size: 3rem;
+  color: rgb(78, 68, 18);
+  font-family: forte regular;
+  max-width: 40vw;
+  margin-bottom: 4vh;
+}
+.title strong {
+  color: rgb(215, 41, 41);
+}
+.title img {
+  height: 47px;
+  display: inline;
+  margin-right: 3px;
+}
+h3 img {
+  position: absolute;
+  bottom: 10%;
+  right: -30%;
+  width: 50px;
+}
+.hero-content h3 {
+  font-family: gabriola regular;
+  font-size: 2rem;
+  color: rgb(98, 96, 65);
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+}
+h3 strong {
+  font-family: freestyle script;
+  color: #e9ce35;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 4px rgb(80, 80, 80);
+  margin: 0 10px;
+}
+@media (max-width: 1040px) {
+  .hero-content h1 {
+    top: auto;
+    left: auto;
+  }
+}
